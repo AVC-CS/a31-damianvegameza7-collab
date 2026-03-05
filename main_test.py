@@ -11,10 +11,8 @@ def regex_test(expected, lines):
                 match += 1
                 break
         else:
-            print(f'\033[91m Not Found: {token} \033[0m')
             assert False, f'Expect: {expected}'
     else:
-        print(f'\033[91m match count: {match} \033[0m')
         assert match == len(expected), f'Expect: {expected}'
 
 
